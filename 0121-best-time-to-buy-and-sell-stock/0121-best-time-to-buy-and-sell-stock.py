@@ -1,7 +1,7 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         max_prof = 0
-        curr_min = prices[0]
+        curr_min = 10**10
         for i in range(len(prices)):
             curr_min = min(curr_min, prices[i])
             curr_prof = prices[i] - curr_min
