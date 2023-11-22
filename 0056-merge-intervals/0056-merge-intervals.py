@@ -6,7 +6,5 @@ class Solution:
             if not res or res[-1][1] < item[0]:
                 res.append(item)
                 continue
-            temp = res[-1]
-            temp[-1] = max(temp[-1], item[-1])
-            res[-1] = temp
+            res[-1][1] = max(res[-1][1], item[-1])
         return res
