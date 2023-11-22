@@ -1,9 +1,8 @@
 class Solution:
+    def swap(self, nums: List[int], idx1:int , idx2:int)-> None:
+        nums[idx1], nums[idx2] = nums[idx2],nums[idx1]
     
-    def swap(self, nums, idx1, idx2):
-        nums[idx1], nums[idx2] = nums[idx2], nums[idx1]
-    
-    def permuteRec(self, idx, nums, res):
+    def permuteRec(self, idx: int, nums: List[int], res: List[List[int]]) ->None:
         if idx == len(nums):
             temp = []
             for val in nums:
