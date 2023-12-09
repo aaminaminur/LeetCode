@@ -23,4 +23,3 @@ class Solution:
                     fresh -= 1
             time += 1
         return time if not fresh else -1
-            
