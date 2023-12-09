@@ -9,6 +9,6 @@ class Solution:
                 power = max(power, fast-slow+1)
                 fast += 1
                 continue
-            while slow < word_size and s[slow] != ch:
-                slow += 1
+            else:
+                slow = fast
         return power
