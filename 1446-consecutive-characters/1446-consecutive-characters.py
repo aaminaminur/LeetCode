@@ -3,7 +3,7 @@ class Solution:
         power = 0
         slow, fast = 0, 0
         word_size = len(s)
-        while fast < word_size and slow < word_size:
+        while fast < word_size:
             ch = s[fast]
             if s[slow] == ch:
                 power = max(power, fast-slow+1)
