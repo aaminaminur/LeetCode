@@ -1,13 +1,15 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        choices = {')':'(', '}':'{', ']':'['}
         stack = []
-        CloseToOpen = {")": "(", "}": "{", "]": "["}
+        
         for ch in s:
-            if stack and ch in CloseToOpen:
-                if stack[-1] == CloseToOpen[ch]:
-                    stack.pop()
-                else:
+            if stack and ch in choices:
+                if stack[-1] != choices[ch]:
                     return False
+                else:
+                    stack.pop()
             else:
                 stack.append(ch)
-        return True if not stack else False
+        
+        return False if stack else True
