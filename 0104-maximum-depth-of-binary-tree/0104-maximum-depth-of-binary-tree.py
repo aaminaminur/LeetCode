@@ -9,9 +9,10 @@ class Solution:
         def helper(root):
             if not root:
                 return 0
-            lh = helper(root.left) + 1
-            rh = helper(root.right) + 1
+
+            lh = helper(root.left)
+            rh = helper(root.right)
             
-            return max(lh, rh)
+            return max(lh, rh) + 1
         
         return helper(root)
