@@ -5,11 +5,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        d = {}
-        for i in range(len(nums)):
-            num = nums[i]
-            com = target-num
-            if com in d:
-                return [d.get(com), i]
-            d[num] = i
-        return None
+        comps = {}
+        size = len(nums)
+        for index in range(size):
+            val = nums[index]
+            comp = target - val
+            if comp in comps.keys():
+                return [index, comps[comp]]
+            comps[val] = index
