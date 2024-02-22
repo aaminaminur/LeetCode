@@ -7,9 +7,9 @@ class Solution(object):
         """
         comps = {}
         size = len(nums)
-        for index in range(size):
-            val = nums[index]
-            comp = target - val
-            if comp in comps.keys():
-                return [index, comps[comp]]
-            comps[val] = index
+        for i in range(size):
+            num = nums[i]
+            comp = target - num
+            if comp in comps:
+                return [i, comps[comp]]
+            comps[num] = i
