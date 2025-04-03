@@ -6,6 +6,7 @@ This repository contains leetcode practice problems.
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/aaminaminur/LeetCode/tree/master/0001-two-sum) |
 | [0242-valid-anagram](https://github.com/aaminaminur/LeetCode/tree/master/0242-valid-anagram) |
 ## String
 |  |
@@ -15,4 +16,8 @@ This repository contains leetcode practice problems.
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/aaminaminur/LeetCode/tree/master/0242-valid-anagram) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/aaminaminur/LeetCode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
